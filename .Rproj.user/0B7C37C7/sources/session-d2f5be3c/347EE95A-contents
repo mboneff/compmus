@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 # Overview
 
-This repo contains materials related to computational musicology course. To be more specific, the content of breakout sessions ( = classworks) and some draft material for future final portfolio.
-
-The object of study of later is [**Radiohead - Knives Out (2001)**](https://www.youtube.com/watch?v=2Lpw3yMCWro&list=RD2Lpw3yMCWro). Several operations have been performed. In particular, two temporal features: *(1)* **a chromatic analysis**, in which pitch information was charted in time; *(2)* **a timbre analysis**, which charts mel-frequencies information in time. The other part covers temporal self-similarity by utilizing **self-similarity matrices** for *(3)* **chromatic** features, and *(4)* **timbre-based** features.
+123
 
 # Homework
 
