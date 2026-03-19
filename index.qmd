@@ -5,19 +5,6 @@ format:
     theme: vapor
 ---
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var target = "#overview";
-  if (window.location.hash !== target) {
-    window.location.hash = target;
-  }
-});
-</script>
-
-# Overview
-
-123
-
 # Homework
 
 ## Analysis Views {.tabset}
