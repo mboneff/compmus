@@ -2,7 +2,7 @@
 title: "Computational musicology"
 format:
   dashboard:
-    theme: cosmic
+    theme: cyborg
 ---
 
 # Homework
@@ -12,7 +12,7 @@ format:
 ### API Features (week 7)
 
 <div style="display: flex; gap: 20px;">
-  <img src="images/energy_histogram.png" width="300" alt="corpus energy histogram"> 
+  <img src="images/energy_histogram.png" width ="400" alt="corpus energy histogram"> 
 </div>
 
 
@@ -49,7 +49,7 @@ This cepstrogram for the 2023 remaster of *Bleed* by Meshuggah is very similar t
 ### Self-Similarity Matrices (week 9)
 
 <div style="display: flex; gap: 20px;"> 
-  <img src="images/bleed_remaster_self_similarity.png" width="400" alt="bleed remaster ssm"> 
+  <img src="images/bleed_remaster_self_similarity.png" width="450" alt="bleed remaster ssm"> 
 </div>
 
 I've also provided a self-similarity matrix for the 2023 remaster of *Bleed*, where the difference in timbre during the instrumental section is even more visible. In this self-similarity matrix, the song structure of *Bleed* is even more visible. I chose this track because of its distinctive instrumental section. While most of the track is characterised by intense, highly-technical and fast-tempo guitarwork, this instrumental segment starting at 4 minutes and 11 seconds is atmospheric, slow-paced, and uses reverb in a way the rest of the track doesn't. Instrumental, highly experimental segments like these are common in progressive metal, and I found *Bleed* to be a very visible example of this feature of the genre.
@@ -60,7 +60,7 @@ I've also provided a self-similarity matrix for the 2023 remaster of *Bleed*, wh
   <img src="images/born_in_winter_key.png" width="400" alt="born in winter keygram"> 
 </div>
 
-Above is a keygram for Gojira's song *Born in Winter*. I've chosen *Born in Winter* because it is one of Gojira's more atmospheric tracks, showing deliberate drift away from distinct keys, and use of modes in a pretty typical manner to progressive metal, though the energy of the track itself is far lower than the average progressive metal song. There are some distinct tonal centres at 25 and 75 seconds in around Eb major, with further distinct tonal clustering at 150 seconds around C major, and to a lesser degree, F minor. This lack of consistent key or mode fits with the broader atmospheric, drifting quality of *Born in Winter*, and is an example of deviation from traditional Western notions of key that is common in the progressive metal genre.
+Above is a keygram for Gojira's song *Born in Winter*. I've chosen *Born in Winter* because it is one of Gojira's more atmospheric tracks, showing deliberate drift away from distinct keys, and use of modes in a pretty typical manner to progressive metal, though the energy of the track itself is far lower than the average progressive metal song. There are some distinct tonal centres at 50 and 125 seconds in around A major, with further distinct tonal clustering at 100 seconds around Db major, and to a lesser degree, G# minor. This lack of consistent key or mode fits with the broader atmospheric, drifting quality of *Born in Winter*, and is an example of deviation from traditional Western notions of key that is common in the progressive metal genre.
 
 <!-- ### Tempo + Novelty (week 11) -->
 
@@ -76,24 +76,24 @@ Above is a keygram for Gojira's song *Born in Winter*. I've chosen *Born in Wint
 ### Novelty (week 11)
 
 <div style="display: flex; gap: 128px;"> 
-  <img src="images/intolerance_novelty_0-30.png" height="400" alt="bleed cepstrogram"> 
-  <img src="images/intolerance_novelty_20-50.png" height="400" alt="bleed remaster cepstrogram"> 
+  <img src="images/intolerance_novelty_0-30.png" height="300" alt="novelty intolerance first"> 
+  <img src="images/intolerance_novelty_20-50.png" height="300" alt="novelty intolerance 20-50"> 
 </div>
 
 <!-- <img src="images/intolerance_novelty_0-30.png" width="350" alt="novelty homework example"> -->
 
 
-As you can see, this novelty function has a period of almost 30 seconds where no onsets are detected at all. *Intolerance* by TOOL begins with a long period of near silence before picking up at around 21 seconds, which explains why the visualisation did not have any data to depict before that point.
+As you can see, this novelty function has a period of 21 seconds where almost no onsets are detected at all. *Intolerance* by TOOL begins with a long period of near silence before picking up at 21 seconds, which explains why the visualisation did not have any data to depict before that point. *Intolerance* is the first track to TOOL's 1993 album *Undertow*, so this near-silence was likely used in place of an intro track, which are commonly used in progressive metal albums (Dir En Grey's album *GAUZE* is a very good example of this, with *GAUZE - mode of adam* being their intro track - their outro track, *GAUZE - mode of eve* is something we'll take a closer look at in the heatmaps). 
 
 <!-- <img src="images/intolerance_novelty_20-50.png" width="350" alt="tempo activation homework example"> -->
 
 
-Here is an adjusted novelty function beginning at 20 seconds and ending at 50 seconds into the track, instead of the previous one, that covered the period of the first 30 seconds. After this, the tempo seems much more regular... at a glance. Complications arise later in the track, as the meter undergoes changes from 4/4 to 3/4 and then back again. It'll be easier to explain what I mean with the DFT tempogram.
+Here is an adjusted novelty function beginning at 20 seconds and ending at 50 seconds into the track, instead of the previous one, that covered the period of the first 30 seconds. After this, the tempo seems much more regular... at a glance. Complications arise later in the track, as the meter undergoes changes from 4/4 to 3/4 and then back again. This change in meter and tempo is very common in progressive metal, of which *Intolerance* is an early example. This track was chosen in particular because of how visible the tempo and meter changes are. It'll be easier to explain what I mean with the DFT tempogram.
 
 ### Tempo (week 11)
 
 <div style="display: flex; gap: 20px;"> 
-<img src="images/intolerance_dft.png" width="350" alt="novelty homework example">
+<img src="images/intolerance_dft.png" width="350" alt="intolerance dft">
 </div>
 
 Here, we can see evidence of a meter change at about 175 seconds, which happens during an instrumental bridge. Meter changes and tempo changes are very common among the progressive metal genre (of which *Intolerance* is an early example), but can be somewhat problematic for visualisations of tempo that often rely on a standard, stable meter. *Intolerance* is a particularly difficult track to count beats in when listening ordinarily, which is why I've chosen it as an example here. *Bleed* by Meshuggah, an example used for earlier weeks, is similar in genre, but its beats map more cleanly to 4/4 and can be more easily counted by the average listener. This tempo visualisation of *Intolerance* tracks an uptick in BPM at around the time of the first verse, which, when listening to the track, doesn't seem to match up. However, if the tempo is measured by the beat of the bass rather than percussion, that would make some sense, as the bass begins playing on beats 1 and 4 or 1 and 3 of each measure rather than playing in smaller subdivisions.
@@ -102,8 +102,8 @@ Here, we can see evidence of a meter change at about 175 seconds, which happens 
 ### Dendrograms (week 12)
 
 <div style="display: flex; gap: 128px;"> 
-  <img src="images/playlist_dendrogram_labels.png" height="250" alt="bleed cepstrogram"> 
-  <img src="images/playlist_dendrogram_labels_small.png" height="250" alt="bleed remaster cepstrogram"> 
+  <img src="images/playlist_dendrogram_labels.png" height="250" alt="bad dendrogram"> 
+  <img src="images/playlist_dendrogram_labels_small.png" height="250" alt="sample dendrogram"> 
 </div>
 
 
@@ -116,8 +116,8 @@ This second dendrogram does a much better job displaying how the songs are clust
 ### Heatmaps (week 12)
 
 <div style="display: flex; gap: 128px;"> 
-  <img src="images/playlist_heatmap_labels.png" height="350" alt="bleed cepstrogram"> 
-  <img src="images/playlist_heatmap_small.png" height="350" alt="bleed remaster cepstrogram"> 
+  <img src="images/playlist_heatmap_labels.png" height="350" alt="bad heatmap"> 
+  <img src="images/playlist_heatmap_small.png" height="350" alt="sample heatmap"> 
 </div>
 
 This first heatmap suffers from the same problem as the first dendrogram - too much text, not enough spacing. I've used the same solution (a 20-track sample of the corpus, rather than a display of the corpus in its entirety) for the second heatmap.
